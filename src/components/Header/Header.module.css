@@ -1,0 +1,57 @@
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  align-items: center;
+}
+
+.listContainer li {
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+.cart {
+  position: relative;
+}
+
+.cartIcon {
+  width: 32px;
+}
+
+.totalProduct {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  height: 30px;
+  width: 30px;
+  font-size: 1rem;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  color: red;
+}

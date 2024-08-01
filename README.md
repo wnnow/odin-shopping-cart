@@ -13,6 +13,7 @@ This React project implements a shopping cart as part of a learning exercise.
 - Home page with basic content
 - Shop page with product listings
 - Shopping cart displaying user-selected products
+  <br />
   **Shopping Cart Functionality**:
   Cart updates and quantity adjustments
   **Data Fetching**:

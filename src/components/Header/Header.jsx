@@ -1,19 +1,28 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
+import cart from "../../assets/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <nav>
-        <ul>
+      <nav className={styles.navContainer}>
+        <div className={styles.logo}>
+          All<span>EE</span>
+        </div>
+        <ul className={styles.listContainer}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <span>Home</span>
+            </Link>
           </li>
           <li>
             <Link to="/products">Products</Link>
           </li>
-          <li>
-            <Link to="/cart">Cart</Link>
+          <li className={styles.cart}>
+            <Link to="/cart">
+              <img src={cart} alt="shopping cart" className={styles.cartIcon} />
+            </Link>
+            <div className={styles.totalProduct}>99+</div>
           </li>
         </ul>
       </nav>

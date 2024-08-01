@@ -1,0 +1,19 @@
+.errorContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backBtn {
+  padding: 4px 8px;
+  margin-top: 8px;
+  background-color: rgb(101, 167, 252);
+  border: 1px solid rgb(101, 167, 252);
+  border-radius: 8px;
+  color: white;
+}
+
+.backBtn:hover {
+  background-color: rgb(69, 149, 255);
+}

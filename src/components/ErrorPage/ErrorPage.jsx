@@ -4,12 +4,11 @@ import styles from "./ErrorPage.module.css";
 const ErrorPage = () => {
   return (
     <div className={styles.errorContainer}>
-      <h1>Error 404</h1>
-      <p>You can shopping at all heart content</p>
-      <div>
-        <Link to={"/"} />
-        Back to Home
-      </div>
+      <h1>Oops! 404 page not found</h1>
+      <p>We can&#39;t seem to find the page you&#39;re looking for.</p>
+      <button className={styles.backBtn}>
+        <Link to={"/"}>Back to Home</Link>
+      </button>
     </div>
   );
 };

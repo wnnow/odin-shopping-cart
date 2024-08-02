@@ -6,6 +6,7 @@ import { useOutletContext } from "react-router-dom";
 const Card = ({ category, item }) => {
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(0);
+
   const { cart, setCart } = useOutletContext();
   useEffect(() => {
     setProduct(item);

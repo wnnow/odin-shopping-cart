@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
+import PropTypes from "prop-types";
 import cart from "../../assets/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg";
 
 const Header = ({ itemInCart }) => {
+  Header.propTypes = {
+    itemInCart: PropTypes.number.isRequired,
+  };
+
   return (
     <header className={styles.header}>
       <nav className={styles.navContainer}>

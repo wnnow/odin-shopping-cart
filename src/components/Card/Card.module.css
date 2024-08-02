@@ -1,5 +1,5 @@
 .card {
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .cardImage {
-  height: 300px;
+  height: 200px;
   width: 200px;
   object-fit: contain; /* Ensures the entire image fits within the container */
   max-width: 100%; /* Prevents stretching beyond the container */

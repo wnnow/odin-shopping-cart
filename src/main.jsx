@@ -7,6 +7,7 @@ import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 import Home from "./components/Home/Home.jsx";
 import Products from "./components/Products/Products.jsx";
 import Cart from "./components/Cart/Cart.jsx";
+import CheckoutComplete from "./components/CheckoutComplete/CheckoutComplete.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "checkout",
+        element: <CheckoutComplete />,
       },
     ],
   },

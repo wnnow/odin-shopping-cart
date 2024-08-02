@@ -1,0 +1,60 @@
+.itemImage {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.itemContainer {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 1em;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.checkOutBtn {
+  width: 180px;
+  padding: 16px 0px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(203, 32, 39);
+  color: white;
+  border: 1px solid rgb(203, 32, 39);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  composes: checkOutBtn;
+  width: 75px;
+  justify-self: flex-end;
+}
+
+.deleteBtn:hover,
+.checkOutBtn:hover {
+  background-color: rgb(143, 24, 28);
+}
+
+.totalPriceContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  font-size: 1.5em;
+}
+
+.checkOutBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5em;
+}

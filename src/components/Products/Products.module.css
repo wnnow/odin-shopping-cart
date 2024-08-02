@@ -110,3 +110,10 @@
     transform: scaleY(-1) rotate(-135deg);
   }
 }
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em; /* Space between cards */
+  padding: 1em; /* Optional: padding around the container */
+}

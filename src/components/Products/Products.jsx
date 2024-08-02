@@ -27,7 +27,7 @@ const Products = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [isFetch]);
 
   function handleCategoryClick(e) {
     setCategory(e.target.dataset.category);
@@ -83,30 +83,6 @@ const Products = () => {
         {products.map((item) => (
           <Card key={item.id} category={category} item={item} />
         ))}
-        {/* {!category &&
-          products.map((item) => (
-            <li key={item.id}>
-              <p>{item.title}</p>
-              <div>
-                <img src={item.image} alt={item.title} />
-              </div>
-              <div>{item.price}$</div>
-              <input type="number" max={99} />
-            </li>
-          ))}
-        {category &&
-          products.map((item) =>
-            item.category === category ? (
-              <li key={item.id}>
-                <p>{item.title}</p>
-                <div>
-                  <img src={item.image} alt={item.title} />
-                </div>
-                <div>{item.price}$</div>
-                <input type="number" max={99} />
-              </li>
-            ) : null
-          )} */}
       </ul>
     </div>
   );

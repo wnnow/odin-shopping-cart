@@ -21,7 +21,7 @@ const Cart = () => {
         <div className={styles.emptyCartContainer}>
           <div className={styles.emptyCartText}>Cart is empty</div>
           <button className={styles.emptyCartBtn}>
-            <Link to={"/products"}>Would you like to buy something?</Link>
+            <Link to={"/products"}>Go shopping now</Link>
           </button>
         </div>
       )}

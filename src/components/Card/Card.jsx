@@ -12,10 +12,6 @@ const Card = ({ category, item }) => {
     setProduct(item);
   }, []);
 
-  // useEffect(() => {
-  //   console.log(cart);
-  // }, [cart]);
-
   Card.propTypes = {
     category: PropTypes.string,
     item: PropTypes.object.isRequired,
@@ -54,7 +50,7 @@ const Card = ({ category, item }) => {
     });
     setQuantity(0);
   }
-  console.log(cart);
+
   return (
     <>
       {category === "default" ? (

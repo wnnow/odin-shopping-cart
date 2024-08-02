@@ -33,9 +33,6 @@ const Products = () => {
     setCategory(e.target.dataset.category);
   }
 
-  console.log(products);
-  console.log(category);
-
   return (
     <div className={`${styles.productsContainer} container`}>
       <ul className={styles.categoryList}>

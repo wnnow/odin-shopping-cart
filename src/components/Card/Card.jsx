@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PropTypes, { element, func } from "prop-types";
+import PropTypes from "prop-types";
 import styles from "./Card.module.css";
 import { useOutletContext } from "react-router-dom";
 
@@ -7,7 +7,6 @@ const Card = ({ category, item }) => {
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(0);
   const { cart, setCart } = useOutletContext();
-
   useEffect(() => {
     setProduct(item);
   }, []);
